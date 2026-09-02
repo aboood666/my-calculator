@@ -1,0 +1,86 @@
+/* Design tokens. Light is the default; dark is applied via system preference or an explicit choice. */
+
+:root {
+  color-scheme: light;
+
+  --ink: #202124;
+  --muted: #6b6f76;
+  --paper: #f4f1ea;
+  --paper-glow: #d9e6e1;
+  --panel: #fffdf8;
+  --panel-inset: #f8f6f0;
+  --key: #ebe6dc;
+  --key-hover: #ddd6c9;
+  --key-muted: #dfe6e4;
+  --key-muted-hover: #cfd9d6;
+  --accent: #176b87;
+  --accent-strong: #0f536a;
+  --operator: #e7a83e;
+  --operator-strong: #ca8e25;
+  --danger: #b5452f;
+  --danger-strong: #933621;
+  --line: rgba(32, 33, 36, 0.13);
+  --shadow: rgba(32, 33, 36, 0.09);
+  --on-accent: #ffffff;
+  --error: #b5452f;
+
+  --radius: 4px;
+  --gap: 10px;
+  --key-height: 56px;
+  --font-body: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-mono: 'Cascadia Code', 'SF Mono', Consolas, monospace;
+  --transition: 140ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+
+    --ink: #ece7dc;
+    --muted: #a09a8f;
+    --paper: #17191c;
+    --paper-glow: #1f2d2c;
+    --panel: #1f2226;
+    --panel-inset: #16181b;
+    --key: #2c3036;
+    --key-hover: #3a3f46;
+    --key-muted: #26333a;
+    --key-muted-hover: #33434b;
+    --accent: #3aa1c4;
+    --accent-strong: #2a89a9;
+    --operator: #e7a83e;
+    --operator-strong: #f2bb5a;
+    --danger: #d8664e;
+    --danger-strong: #e77e67;
+    --line: rgba(236, 231, 220, 0.14);
+    --shadow: rgba(0, 0, 0, 0.45);
+    --on-accent: #10141a;
+    --error: #ff8a70;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --ink: #ece7dc;
+  --muted: #a09a8f;
+  --paper: #17191c;
+  --paper-glow: #1f2d2c;
+  --panel: #1f2226;
+  --panel-inset: #16181b;
+  --key: #2c3036;
+  --key-hover: #3a3f46;
+  --key-muted: #26333a;
+  --key-muted-hover: #33434b;
+  --accent: #3aa1c4;
+  --accent-strong: #2a89a9;
+  --operator: #e7a83e;
+  --operator-strong: #f2bb5a;
+  --danger: #d8664e;
+  --danger-strong: #e77e67;
+  --line: rgba(236, 231, 220, 0.14);
+  --shadow: rgba(0, 0, 0, 0.45);
+  --on-accent: #10141a;
+  --error: #ff8a70;
+}
